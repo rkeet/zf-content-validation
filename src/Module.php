@@ -21,6 +21,6 @@ class Module
         $events   = $app->getEventManager();
         $services = $app->getServiceManager();
 
-        $services->get(ContentValidationListener::class)->attach($events);
+        $services->get('ContentValidationListener')->attach($events);
     }
 }
