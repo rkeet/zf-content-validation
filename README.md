@@ -164,7 +164,7 @@ Example:
 
 ### System Configuration
 
-The following configuration is defined by the module in order to function within a ZF2 application.
+The following configuration is defined by the module in order to function within a ZF2/ZF3 application.
 
 ```php
 namespace ZF\ContentValidation;
@@ -178,6 +178,7 @@ return [
             'getinputfilter' => InputFilter\InputFilterPlugin::class,
             'getInputfilter' => InputFilter\InputFilterPlugin::class,
             'getInputFilter' => InputFilter\InputFilterPlugin::class,
+            'GetInputFilter' => InputFilter\InputFilterPlugin::class,
         ],
         'factories' => [
             InputFilter\InputFilterPlugin::class => InvokableFactory::class,
@@ -189,6 +190,11 @@ return [
         ],
     ],
     'service_manager' => [
+        'aliases' => [
+            'contentvalidationlistener' => ContentValidationListener::class,
+            'contentValidationListener' => ContentValidationListener::class,
+            'ContentValidationListener' => ContentValidationListener::class,
+        ],
         'factories' => [
             ContentValidationListener::class => ContentValidationListenerFactory::class,
         ],
