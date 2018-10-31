@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## 1.7.0 - TBD
+
+### Added
+
+- Added `remove_empty_data` flag - If set & true it causes removal of empty key/value pairs from filtered input data.
+
+### Changed
+
+- Nothing.
+
+### Deprecated
+
+- Nothing.
+
+### Removed
+
+- Nothing.
+
+### Fixed
+
+- Nothing.
+
 ## 1.6.2 - TBD
 
 ### Added
